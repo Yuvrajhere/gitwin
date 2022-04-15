@@ -49,7 +49,7 @@ const Button = ({
 
   if (link && to) {
     return (
-      <Link href={to}>
+      <Link href={to} passHref>
         <button className={classes} disabled={disabled} onClick={onClick}>
           {children}
         </button>

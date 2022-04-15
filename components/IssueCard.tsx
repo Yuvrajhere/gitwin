@@ -1,8 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { BsFillPersonFill } from "react-icons/bs";
 
 const IssueCard = () => {
+
+  let sum = 40; // comonentWillMount
+
+  useEffect(() => { // componenetDidMount || componentDidUpdate
+    sum = 70;
+  })
+
+  // render
   return (
     <Link href="/issue/1" scroll={false} passHref>
       <a>
